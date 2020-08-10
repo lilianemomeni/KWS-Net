@@ -14,7 +14,47 @@
 
 ## 1. Preparation
 
+### 1.1. Dependencies
+
+#### System 
+* ffmpeg
+
+#### Python 
+* Torch
+* NumPy
+
+###### Optional for visualization
+* Matplotlib
+* TensorBoard
+
+Install python dependencies by creating a new virtual environment and then running 
+
+```
+pip install -r requirements.txt
+```
+
+### 1.2. Datasets
+
+The models have been trained on the [LRW and LRS2 datasets](http://www.robots.ox.ac.uk/~vgg/data/lip_reading/) and evaluated on the LRS2 dataset. More details can be found in the paper.
+
+### 1.3. Pre-trained models
+
+Download the pre-trained models by running
+
+```
+./download_models.sh
+```
+We provide several pre-trained models used in the paper:
+
+* [Stafylakis & Tzimiropoulos G2P](https://arxiv.org/pdf/1807.08469.pdf) implementation - xxx.pth
+* Stafylakis & Tzimiropoulos P2G - xxx.pth
+* KWS-Net - xxx.pth
+
+The above models are explained in more detail in the [training section](https://github.com/lilianemomeni/KWS-Net#2-training).
+
 ## 2. Training
+
+
 
 ## 2. Testing
 
