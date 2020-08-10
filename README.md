@@ -46,9 +46,9 @@ Download the pre-trained models by running
 ```
 We provide several pre-trained models used in the paper:
 
-* [Stafylakis & Tzimiropoulos G2P](https://arxiv.org/pdf/1807.08469.pdf) implementation - xxx.pth
-* Stafylakis & Tzimiropoulos P2G - xxx.pth
-* KWS-Net - xxx.pth
+* [Stafylakis & Tzimiropoulos G2P](https://arxiv.org/pdf/1807.08469.pdf) implementation - G2P_baseline.pth
+* Stafylakis & Tzimiropoulos P2G - P2G_baseline.pth
+* KWS-Net - KWS_Net.pth
 
 The above models are explained in more detail in the [training section](https://github.com/lilianemomeni/KWS-Net#2-training).
 
