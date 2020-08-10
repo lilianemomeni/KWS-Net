@@ -5,6 +5,8 @@
 
 [[Project page]](http://www.robots.ox.ac.uk/~vgg/research/kws-net/) 
 
+TODO: Add visualisation
+
 ## Contents
 * [1. Preparation](https://github.com/lilianemomeni/KWS-Net#1-preparation)
 * [2. Training](https://github.com/lilianemomeni/KWS-Net#2-training)
@@ -37,6 +39,8 @@ pip install -r requirements.txt
 
 The models have been trained on the [LRW and LRS2 datasets](http://www.robots.ox.ac.uk/~vgg/data/lip_reading/) and evaluated on the LRS2 dataset. More details can be found in the paper.
 
+TODO: Add details on preprocessing
+
 ### 1.3. Pre-trained models
 
 Download the pre-trained models by running
@@ -52,11 +56,17 @@ We provide several pre-trained models used in the paper:
 
 The above models are explained in more detail in the [training section](https://github.com/lilianemomeni/KWS-Net#2-training).
 
+TODO: make download_models.sh
+
 ## 2. Training
 
+TODO: explain two stages of training
 
+TODO: show expected outputs
 
 ## 2. Testing
+
+TODO: make demo
 
 ## Citation
 If you use this code, please cite the following:
