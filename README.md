@@ -7,7 +7,6 @@
 
 [[Project page]](http://www.robots.ox.ac.uk/~vgg/research/kws-net/) 
 
-TODO: Add visualisation
 
 ## Contents
 * [1. Preparation](https://github.com/lilianemomeni/KWS-Net#1-preparation)
