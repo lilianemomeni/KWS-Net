@@ -40,8 +40,9 @@ pip install -r requirements.txt
 * Download [LRW](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html) and [LRS2](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html) datasets for training; [LRS2](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html) dataset for testing
 * Extract talking faces from clips using [metadata](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) available
 * Pre-compute features for clips of talking faces using pre-trained [lip reading model](https://github.com/afourast/deep_lip_reading) 
-* Download [CMU phonetic dictionary](https://github.com/cmusphinx/cmudict) - cmudict.dict
-
+* Download [CMU phonetic dictionary](https://github.com/cmusphinx/cmudict): ```data/cmudict.dict```
+* Build CMU phoneme and grapheme vocabulary files: ```data/phoneme_field_vocab.json``` and ```data/grapheme_field_vocab.json```
+* Build dataset split json files:
 
 
 ### 1.3. Pre-trained models
