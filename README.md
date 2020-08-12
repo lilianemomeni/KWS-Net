@@ -1,7 +1,6 @@
 # Seeing Wake Words: Audio-visual Keyword Spotting
-
-[Liliane Momeni](http://www.robots.ox.ac.uk/~liliane/), [Triantafyllos Afouras](http://www.robots.ox.ac.uk/~afourast/), [Themos Stafylakis](http://github.com/tstafylakis), [Samuel Albanie](http://www.robots.ox.ac.uk/~albanie/) and [Andrew Zisserman](http://www.robots.ox.ac.uk/~az/),
-*Seeing Wake Words: Audio-visual Keyword Spotting*, BMVC 2020.
+This repository contains code for training and evaluating the best performing visual keyword spotting model described in the paper [Liliane Momeni](http://www.robots.ox.ac.uk/~liliane/), [Triantafyllos Afouras](http://www.robots.ox.ac.uk/~afourast/), [Themos Stafylakis](http://github.com/tstafylakis), [Samuel Albanie](http://www.robots.ox.ac.uk/~albanie/) and [Andrew Zisserman](http://www.robots.ox.ac.uk/~az/),
+*Seeing Wake Words: Audio-visual Keyword Spotting*, BMVC 2020. Two baseline keyword spotting models are also included.
 
 ![alt text](media/teaser/teaser_fig.gif )
 
@@ -36,11 +35,14 @@ Install python dependencies by creating a new virtual environment and then runni
 pip install -r requirements.txt
 ```
 
-### 1.2. Datasets
+### 1.2. Datasets & Pre-processing
 
-The models have been trained on the [LRW and LRS2 datasets](http://www.robots.ox.ac.uk/~vgg/data/lip_reading/) and evaluated on the LRS2 dataset. More details can be found in the paper.
+* Download [LRW](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html) and [LRS2](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html) datasets for training; [LRS2](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html) dataset for testing
+* Extract talking faces from clips using [metadata](https://www.robots.ox.ac.uk/~vgg/data/lip_reading/) available
+* Pre-compute features for clips of talking faces using pre-trained [lip reading model](https://github.com/afourast/deep_lip_reading) 
+* Download [CMU phonetic dictionary](https://github.com/cmusphinx/cmudict) - cmudict.dict
 
-TODO: Add details on preprocessing
+
 
 ### 1.3. Pre-trained models
 
@@ -51,11 +53,9 @@ Download the pre-trained models by running
 ```
 We provide several pre-trained models used in the paper:
 
-* [Stafylakis & Tzimiropoulos G2P](https://arxiv.org/pdf/1807.08469.pdf) implementation - G2P_baseline.pth
-* Stafylakis & Tzimiropoulos P2G - P2G_baseline.pth
-* KWS-Net - KWS_Net.pth
-
-The above models are explained in more detail in the [training section](https://github.com/lilianemomeni/KWS-Net#2-training).
+* [Stafylakis & Tzimiropoulos G2P](https://arxiv.org/pdf/1807.08469.pdf) implementation: G2P_baseline.pth
+* Stafylakis & Tzimiropoulos P2G, a variant of the above model where the grapheme-to-phoneme keyword encoder-decoder has been switched to a phoneme-to-grapheme architecture: P2G_baseline.pth
+* KWS-Net, the novel convolutional architecture we propose: KWS_Net.pth
 
 TODO: make download_models.sh
 
