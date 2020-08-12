@@ -11,6 +11,7 @@ This repository contains code for training and evaluating the best performing vi
 * [1. Preparation](https://github.com/lilianemomeni/KWS-Net#1-preparation)
 * [2. Training](https://github.com/lilianemomeni/KWS-Net#2-training)
 * [3. Testing](https://github.com/lilianemomeni/KWS-Net#3-testing)
+* [4. Demo](https://github.com/lilianemomeni/KWS-Net#3-demo)
 * [Citation](https://github.com/lilianemomeni/KWS-Net#citation)
 
 
@@ -64,12 +65,17 @@ TODO: make download_models.sh
 ## 2. Training
 
 TODO: explain two stages of training
+TODO: explain train words LRW: ```data/lrw/LRW_train_words.json ```
+
 
 TODO: show expected outputs
 
-## 2. Testing
+## 3. Testing
+TODO: explain test words LRS2:  ``` data/lrs2/LRS2_test_words.json```
 
-TODO: make demo
+## 4. Demo
+
+TODO: make demo with few examples Test samples/words
 
 ## Citation
 If you use this code, please cite the following:
