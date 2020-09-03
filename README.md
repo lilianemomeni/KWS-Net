@@ -75,22 +75,22 @@ We employ a curriculum training procedure from the pre-computed features for the
 The initial learning rate is 10−3 and decreases by a half every 10 epochs. We train this for 40 epochs. 
 
 ```bash
-python train_LRW.py --config ./configs/ --checkpoint. #G2P
+python train_LRW.py --config=./configs/lrw/g2p/train.json #G2P
 
-python train_LRW.py --config ./configs/ --checkpoint. #P2G
+python train_LRW.py --config=./configs/lrw/p2g/train.json  #P2G
 
-python train_LRW.py --config ./configs/ --checkpoint. #KWS-Net
+python train_LRW.py --config=./configs/lrw/kwsnet/train.json #KWS-Net
 ```
 ### 2.2 Fine-tuning on LRS2
 
 For fine-tuning on LRS2, the initial learning rate is 10−4 and decreases by a half every 20 epochs. We train this second stage for 60 epochs. The network is trained for a total of 100 epochs (pre-training and fine-tuning).
 
 ```bash
-python train_LRS.py --config ./configs/ --checkpoint. #G2P
+python train_LRS.py --config=./configs/lrs2/g2p/train.json --checkpoint=./path_where_lrw_g2p_model_saved.pth #G2P
 
-python train_LRS.py --config ./configs/ --checkpoint. #P2G
+python train_LRS.py --config=./configs/lrs2/p2g/train.json --checkpoint=./path_where_lrw_p2g_model_saved.pth #P2G
 
-python train_LRS.py --config ./configs/ --checkpoint. #KWS-Net
+python train_LRS.py --config=./configs/lrs2/kwsnet/train.json --checkpoint=./path_where_lrw_kwsnet_model_saved.pth #KWS-Net
 ```
 
 ## 3. Testing
