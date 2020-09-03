@@ -47,7 +47,7 @@ pip install -r requirements.txt
 * Build CMU phoneme and grapheme vocabulary files: ```data/vocab/phoneme_field_vocab.json``` and ```data/vocab/grapheme_field_vocab.json```
 * Build dataset split json files: ```data/lrs2/DsplitsLRS2.json``` and ```data/lrw/DsplitsLRW.json``` using ```misc/data_splits_lrs2.py``` and ```misc/data_splits_lrw.py``` respectively 
 
-TODO: ```misc/data_splits_lrs2.py``` and ```misc/data_splits_lrw.py```
+**TODO: ```misc/data_splits_lrs2.py``` and ```misc/data_splits_lrw.py```**
 
 
 ### 1.3. Pre-trained models
@@ -63,7 +63,7 @@ We provide several pre-trained models used in the paper:
 * Stafylakis & Tzimiropoulos P2G, a variant of the above model where the grapheme-to-phoneme keyword encoder-decoder has been switched to a phoneme-to-grapheme architecture: P2G_baseline.pth
 * KWS-Net, the novel convolutional architecture we propose: KWS_Net.pth
 
-TODO: make download_models.sh
+**TODO: make download_models.sh**
 
 ## 2. Training
 
