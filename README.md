@@ -68,12 +68,38 @@ We provide several pre-trained models used in the paper:
 
 ## 2. Training
 
-TODO: explain two stages of training
-We employ a curriculum training procedure for the rest of network that consists of two stages: (i) it is initially trained on the training set of LRW. As LRW contains clips of single words, here the model is trained without word time boundaries, (ii) the model is then fine-tuned on the sequence-level datasets.
+We employ a curriculum training procedure from the pre-computed features for the rest of network that consists of two stages: (i) it is initially trained on the training set of LRW. As LRW contains clips of single words, here the model is trained without word time boundaries, (ii) the model is then fine-tuned on LRS2.
 
+### 2.1 Pre-training on LRW
 
+The initial learning rate is 10−3 and decreases by a half every 10 epochs. We train this for 40 epochs. 
 
-TODO: show expected outputs
+```bash
+
+python test_LRS.py --config ./configs/ --checkpoint. #G2P
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
+
+python test_LRS.py --config ./configs/ --checkpoint. #P2G
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
+
+python test_LRS.py --config ./configs/ --checkpoint. #KWS-Net
+#EXPE
+```
+### 2.2 Fine-tuning on LRS2
+
+For fine-tuning on LRS2, the initial learning rate is 10−4 and decreases by a half every 20 epochs. We train this second stage for 60 epochs. The network is trained for a total of 100 epochs (pre-training and fine-tuning).
+
+```bash
+
+python test_LRS.py --config ./configs/ --checkpoint. #G2P
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
+
+python test_LRS.py --config ./configs/ --checkpoint. #P2G
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
+
+python test_LRS.py --config ./configs/ --checkpoint. #KWS-Net
+#EXPE
+```
 
 ## 3. Testing
 
