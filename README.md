@@ -86,8 +86,13 @@ The performance is evaluated based on ranking metrics. For every keyword in the 
 ```bash
 
 python test_LRS.py --config ./configs/ --checkpoint. #G2P
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
+
 python test_LRS.py --config ./configs/ --checkpoint. #P2G
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
+
 python test_LRS.py --config ./configs/ --checkpoint. #KWS-Net
+#EXPECTED RESULTS xxxxxxxxxxxxxxxx
 ```
 ## 4. Demo
 
