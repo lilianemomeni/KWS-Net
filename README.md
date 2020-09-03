@@ -103,13 +103,13 @@ The performance is evaluated based on ranking metrics. For every keyword in the 
 
 ```bash
 
-python test_LRS.py --config ./configs/ --checkpoint. #G2P
+python test_LRS.py --config=./configs/lrs2/g2p/eval.json --checkpoint=./models/G2P_baseline.pth #G2P
 #EXPECTED RESULTS xxxxxxxxxxxxxxxx
 
-python test_LRS.py --config ./configs/ --checkpoint. #P2G
+python test_LRS.py --config=./configs/lrs2/p2g/eval.json --checkpoint=./models/P2G_baseline.pth #P2G
 #EXPECTED RESULTS xxxxxxxxxxxxxxxx
 
-python test_LRS.py --config ./configs/ --checkpoint. #KWS-Net
+python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --checkpoint=./models/KWS_Net.pth #KWS-Net
 #EXPECTED RESULTS xxxxxxxxxxxxxxxx
 ```
 ## 4. Demo
