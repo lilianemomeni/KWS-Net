@@ -4,7 +4,7 @@ This repository contains code for training and evaluating the best performing vi
 
 ![alt text](media/teaser/teaser_fig.gif )
 
-[[Project page]](http://www.robots.ox.ac.uk/~vgg/research/kws-net/) 
+[[Project page]](http://www.robots.ox.ac.uk/~vgg/research/kws-net/) [[Arxiv]](https://arxiv.org/abs/2009.01225) 
 
 
 ## Contents
