@@ -80,9 +80,11 @@ TODO: make demo with few examples Test samples/words
 ## Citation
 If you use this code, please cite the following:
 ```
-@INPROCEEDINGS{momeni20_kwsnet,
-  title     = {Seeing Wake Words: Audio-visual Keyword Spotting },
-  author    = {Momeni, Liliane and Afouras, Triantafyllos and Stafylakis, Themos and Albanie, Samuel and Zisserman, Andrew},
-  booktitle = {BMVC},
-  year      = {2020}
+@misc{momeni2020seeing,
+    title={Seeing wake words: Audio-visual Keyword Spotting},
+    author={Liliane Momeni and Triantafyllos Afouras and Themos Stafylakis and Samuel Albanie and Andrew Zisserman},
+    year={2020},
+    eprint={2009.01225},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
