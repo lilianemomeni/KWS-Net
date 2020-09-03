@@ -12,6 +12,7 @@ This repository contains code for training and evaluating the best performing vi
 * [2. Training](https://github.com/lilianemomeni/KWS-Net#2-training)
 * [3. Testing](https://github.com/lilianemomeni/KWS-Net#3-testing)
 * [4. Demo](https://github.com/lilianemomeni/KWS-Net#3-demo)
+* [Limitations](https://github.com/lilianemomeni/KWS-Net#limitations)
 * [Citation](https://github.com/lilianemomeni/KWS-Net#citation)
 
 
@@ -75,7 +76,14 @@ TODO: explain test words LRS2:  ``` data/lrs2/LRS2_test_words.json```
 
 ## 4. Demo
 
-TODO: make demo with few examples Test samples/words
+TODO: make demo with fun examples from video BMVC 2020
+
+## Limitations
+We would like to emphasise that this research represents a working progress towards achieving automatic visual keyword spotting, and as such, has a number of limitations that we are aware of (and likely many that we are not aware of). Key limitations:
+* Homophemes - for example, the words "may", "pay", "bay" cannot be distinguished without audio as the visemes "m", "p", "b" visually look the same.
+* Accents, speed of speech and mumbling which modify lip movements.
+* Variable imaging conditions such as lighting, motion and resolution which modiy the appearance of the lips.
+* Shorter keywords which are harder to visually spot.
 
 ## Citation
 If you use this code, please cite the following:
