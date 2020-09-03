@@ -46,7 +46,7 @@ pip install -r requirements.txt
 * Download [CMU phonetic dictionary](https://github.com/cmusphinx/cmudict): ```data/vocab/cmudict.dict```
 * Build CMU phoneme and grapheme vocabulary files: ```data/vocab/phoneme_field_vocab.json``` and ```data/vocab/grapheme_field_vocab.json```
 * Build dataset split json files: ```data/lrs2/DsplitsLRS2.json``` and ```data/lrw/DsplitsLRW.json``` using ```misc/data_splits_lrs2.py``` and ```misc/data_splits_lrw.py``` respectively 
-* Keyword vocabularies: for both training and evaluation, we use only keywords pronounced with np > 5 phonemes. Moreover, as we want to evaluate on unseen keywords, we ensure that training and testing are performed on disjoint keyword vocabularies. To that end, we use all the words appearing in the LRS2 test set with np > 5 phonemes as evaluation keywords ``` data/lrs2/LRS2_test_words.json``` and we remove them from the training vocabulary, i.e. those words are not used in training the keyword encoder. In this way, the LRW 500 word vocabulary is also reduced ```data/lrw/LRW_train_words.json ```.
+* Keyword vocabularies: for both training and evaluation, we use only keywords pronounced with np > 5 phonemes. Moreover, as we want to evaluate on unseen keywords, we ensure that training and testing are performed on disjoint keyword vocabularies. To that end, we use all the words appearing in the LRS2 test set with np > 5 phonemes as evaluation keywords ``` data/lrs2/LRS2_test_words.json``` and we remove them from the training vocabulary, i.e. those words are not used in training the keyword encoder. For example, for the LRW dataset, the 500 word training vocabulary is reduced to ```data/lrw/LRW_train_words.json ```.
 
 **TODO: ```misc/data_splits_lrs2.py``` and ```misc/data_splits_lrw.py```**
 
