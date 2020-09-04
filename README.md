@@ -70,7 +70,7 @@ here 2.27 2.53
 Download the pre-trained models by running
 
 ```
-./download_models.sh
+bash misc/download_models.sh
 ```
 We provide several pre-trained models used in the paper:
 
