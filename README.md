@@ -118,13 +118,13 @@ The performance is evaluated based on ranking metrics. For every keyword in the 
 ```bash
 
 python test_LRS.py --config=./configs/lrs2/g2p/eval.json --checkpoint=./misc/pretrained_models/G2P_baseline.pth #G2P
-# R@1: 22.8 | R@5 49.0 | R@10 59.1 | mAP 36.0 
+# R@1 22.8 | R@5 49.0 | R@10 59.1 | mAP 36.0 | EER 8.9
 
 python test_LRS.py --config=./configs/lrs2/p2g/eval.json --checkpoint=./misc/pretrained_models/P2G_baseline.pth #P2G
-# R@1: 30.0 | R@5 53.7 | R@10 65.3 | mAP 43.5 
+# R@1 30.0 | R@5 53.7 | R@10 65.3 | mAP 43.5 | EER 6.3
 
 python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --checkpoint=./misc/pretrained_models/KWS_Net.pth #KWS-Net
-# R@1: 37.9 | R@5 66.8 | R@10 75.6 | mAP 53.9 
+# R@1 37.9 | R@5 66.8 | R@10 75.6 | mAP 53.9 | EER 5.7
 ```
 ## 4. Demo
 
