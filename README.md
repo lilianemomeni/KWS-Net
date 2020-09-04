@@ -98,11 +98,11 @@ python train_LRW.py --config=./configs/lrw/kwsnet/train.json #KWS-Net
 For fine-tuning on LRS2, the initial learning rate is 10−4 and decreases by a half every 20 epochs. We train this second stage for 60 epochs. The network is trained for a total of 100 epochs (pre-training and fine-tuning).
 
 ```bash
-python train_LRS.py --config=./configs/lrs2/g2p/train.json --checkpoint=./path_where_lrw_g2p_model_saved.pth #G2P
+python train_LRS.py --config=./configs/lrs2/g2p/train.json --resume=./path_where_lrw_g2p_model_saved.pth #G2P
 
-python train_LRS.py --config=./configs/lrs2/p2g/train.json --checkpoint=./path_where_lrw_p2g_model_saved.pth #P2G
+python train_LRS.py --config=./configs/lrs2/p2g/train.json --resume=./path_where_lrw_p2g_model_saved.pth #P2G
 
-python train_LRS.py --config=./configs/lrs2/kwsnet/train.json --checkpoint=./path_where_lrw_kwsnet_model_saved.pth #KWS-Net
+python train_LRS.py --config=./configs/lrs2/kwsnet/train.json --resume=./path_where_lrw_kwsnet_model_saved.pth #KWS-Net
 ```
 
 ## 3. Testing
@@ -115,13 +115,13 @@ The performance is evaluated based on ranking metrics. For every keyword in the 
 
 ```bash
 
-python test_LRS.py --config=./configs/lrs2/g2p/eval.json --checkpoint=./misc/pretrained_models/G2P_baseline.pth #G2P
+python test_LRS.py --config=./configs/lrs2/g2p/eval.json --resume=./misc/pretrained_models/G2P_baseline.pth #G2P
 # R@1 22.1 | R@5 47.6 | R@10 59.2 | mAP 35.6 | EER 9.3
 
-python test_LRS.py --config=./configs/lrs2/p2g/eval.json --checkpoint=./misc/pretrained_models/P2G_baseline.pth #P2G
+python test_LRS.py --config=./configs/lrs2/p2g/eval.json --resume=./misc/pretrained_models/P2G_baseline.pth #P2G
 # R@1 28.0 | R@5 55.4 | R@10 65.2 | mAP 42.7 | EER 6.1
 
-python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --checkpoint=./misc/pretrained_models/KWS_Net.pth #KWS-Net
+python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --resume=./misc/pretrained_models/KWS_Net.pth #KWS-Net
 # R@1 39.5 | R@5 67.1 | R@10 75.3 | mAP 54.9 | EER 5.4
 ```
 ## 4. Demo
