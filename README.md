@@ -78,8 +78,6 @@ We provide several pre-trained models used in the paper:
 * Stafylakis & Tzimiropoulos P2G, a variant of the above model where the grapheme-to-phoneme keyword encoder-decoder has been switched to a phoneme-to-grapheme architecture: P2G_baseline.pth
 * KWS-Net, the novel convolutional architecture we propose: KWS_Net.pth
 
-**TODO: make download_models.sh**
-
 ## 2. Training
 
 We employ a curriculum training procedure from the pre-computed features for the rest of network that consists of two stages: (i) it is initially trained on the training set of LRW. As LRW contains clips of single words, here the model is trained without word time boundaries, (ii) the model is then fine-tuned on LRS2.
