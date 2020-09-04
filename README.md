@@ -64,8 +64,6 @@ here 2.27 2.53
 ```
 * Keyword vocabularies: for both training and evaluation, we use only keywords pronounced with number of phonemes np > 5 phonemes. Moreover, as we want to evaluate on unseen keywords, we ensure that training and testing are performed on disjoint keyword vocabularies. To that end, we use all the words appearing in the LRS2 test set with np > 5 phonemes as evaluation keywords ``` data/lrs2/LRS2_test_words.json``` and we remove them from the training vocabulary, i.e. those words are not used in training the keyword encoder. For example, for the LRW dataset, the 500 word training vocabulary is reduced to ```data/lrw/LRW_train_words.json```.
 
-**TODO: ```misc/data_splits_lrs2.py``` and ```misc/data_splits_lrw.py```**
-
 
 ### 1.3. Pre-trained models
 
