@@ -118,7 +118,7 @@ The performance is evaluated based on ranking metrics. For every keyword in the 
 ```bash
 
 python test_LRS.py --config=./configs/lrs2/g2p/eval.json --checkpoint=./misc/pretrained_models/G2P_baseline.pth #G2P
-# R@1 22.8 | R@5 49.0 | R@10 59.1 | mAP 36.0 | EER 8.9
+# R@1 22.1 | R@5 47.6 | R@10 59.2 | mAP 35.6 | EER 9.3
 
 python test_LRS.py --config=./configs/lrs2/p2g/eval.json --checkpoint=./misc/pretrained_models/P2G_baseline.pth #P2G
 # R@1 30.0 | R@5 53.7 | R@10 65.3 | mAP 43.5 | EER 6.3
