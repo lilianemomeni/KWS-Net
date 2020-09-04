@@ -124,7 +124,7 @@ python test_LRS.py --config=./configs/lrs2/p2g/eval.json --checkpoint=./misc/pre
 # R@1 30.0 | R@5 53.7 | R@10 65.3 | mAP 43.5 | EER 6.3
 
 python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --checkpoint=./misc/pretrained_models/KWS_Net.pth #KWS-Net
-# R@1 37.9 | R@5 66.8 | R@10 75.6 | mAP 53.9 | EER 5.7
+# R@1 39.5 | R@5 67.1 | R@10 75.3 | mAP 54.9 | EER 5.4
 ```
 ## 4. Demo
 
