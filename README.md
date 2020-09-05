@@ -119,10 +119,10 @@ python test_LRS.py --config=./configs/lrs2/g2p/eval.json --resume=./misc/pretrai
 # R@1 22.1 | R@5 47.6 | R@10 59.2 | mAP 35.6 | EER 9.3
 
 python test_LRS.py --config=./configs/lrs2/p2g/eval.json --resume=./misc/pretrained_models/P2G_baseline.pth #P2G
-# R@1 28.0 | R@5 55.4 | R@10 65.2 | mAP 42.7 | EER 6.1
+# R@1 28.0 | R@5 55.6 | R@10 65.4 | mAP 42.7 | EER 6.1
 
 python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --resume=./misc/pretrained_models/KWS_Net.pth #KWS-Net
-# R@1 39.5 | R@5 67.1 | R@10 75.3 | mAP 54.9 | EER 5.4
+# R@1 39.5 | R@5 67.0 | R@10 74.8 | mAP 54.7 | EER 5.6
 ```
 ## 4. Demo
 
