@@ -134,7 +134,7 @@ To verify that everything works
 python run_demo.py --config=./configs/demo/eval.json --resume=./misc/pretrained_models/KWS_Net.pth
 ```
 expected output:
-![alt text](media/demo/demo.png)
+![alt text](media/demo/demo_plot.png)
 ## Limitations
 We would like to emphasise that this research represents a working progress towards achieving automatic visual keyword spotting, and as such, has a number of limitations that we are aware of (and likely many that we are not aware of). Key limitations are abilities to deal with:
 * Homophemes - for example, the words "may", "pay", "bay" cannot be distinguished without audio as the visemes "m", "p", "b" visually look the same.
