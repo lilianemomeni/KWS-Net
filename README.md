@@ -133,7 +133,7 @@ To verify that everything works
 ``` bash
 python run_demo.py --config=./configs/demo/eval.json --resume=./misc/pretrained_models/KWS_Net.pth
 ```
-* Expected output file created and saved at data/demo/demo.png shown below. In blue is the output from the classifier and in green the ground truth keyword boundaries.
+* Expected output file created and saved at ```data/demo/demo.png``` shown below. In blue is the output from the classifier and in green the ground truth keyword boundaries.
 <img src="media/demo/demo_plot.png" width="800" height="250">
 
 ## Limitations
