@@ -126,8 +126,15 @@ python test_LRS.py --config=./configs/lrs2/kwsnet/eval.json --resume=./misc/pret
 ```
 ## 4. Demo
 
-TODO: make demo with fun examples from video BMVC 2020
+To verify that everything works
 
+* Run ```bash misc/download_models.sh``` to get the pretrained models
+* Run a simple demo
+``` bash
+python run_demo.py --config=./configs/demo/eval.json --resume=./misc/pretrained_models/KWS_Net.pth
+```
+expected output:
+![alt text](media/demo/demo.png)
 ## Limitations
 We would like to emphasise that this research represents a working progress towards achieving automatic visual keyword spotting, and as such, has a number of limitations that we are aware of (and likely many that we are not aware of). Key limitations are abilities to deal with:
 * Homophemes - for example, the words "may", "pay", "bay" cannot be distinguished without audio as the visemes "m", "p", "b" visually look the same.
