@@ -134,7 +134,8 @@ To verify that everything works
 python run_demo.py --config=./configs/demo/eval.json --resume=./misc/pretrained_models/KWS_Net.pth
 ```
 * Expected output file created and saved at data/demo/demo.png shown below. In blue is the output from the classifier and in green the ground truth keyword boundaries.
-![alt text](media/demo/demo_plot.png)
+<img src="media/demo/demo_plot.png" width="800" height="250">
+
 ## Limitations
 We would like to emphasise that this research represents a working progress towards achieving automatic visual keyword spotting, and as such, has a number of limitations that we are aware of (and likely many that we are not aware of). Key limitations are abilities to deal with:
 * Homophemes - for example, the words "may", "pay", "bay" cannot be distinguished without audio as the visemes "m", "p", "b" visually look the same.
