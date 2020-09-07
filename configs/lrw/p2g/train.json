@@ -1,0 +1,95 @@
+{
+    "name": "",
+    "n_gpu": 1,
+    "seed": 0,
+    "arch": {
+        "type": "KWSModel",
+        "args": {
+            "hiddenDNNV": 128,
+            "dimRnn3": 16,
+            "inputDimV": 512,
+            "hiddenDimV": 256,
+            "birnnV": true,
+            "d_word_emb": 128,
+            "outdpV": 0.2,
+            "p_size": 73,
+            "g_size": 34,
+            "d_embed": 64,
+            "d_hidden": 500,
+            "embDO": 0,
+            "beam_size": 3,
+            "num_heads": 1,
+            "rnn2": true,     
+            "fixed_length_embedding": true, 
+            "shortcut": true,
+            "loc_acc": false, 
+            "g2p": false
+        }
+    },
+    "dataset": {
+        "type": "DatasetV", 
+        "args": {
+            "dataset_name": "lrw",
+            "split": "",
+            "cmu_dict_path": "data/vocab/cmudict.dict",
+            "vis_feat_dir": ["/scratch/local/hdd/afourast/lrw_feats_mag1.5_80/"], 
+            "data_struct_path": "data/lrw/DsplitsLRW.json", 
+            "num_phoneme_thr": 0,
+            "field_vocab_paths": {
+                "graphemes": "data/vocab/grapheme_field_vocab.json",
+                "phonemes": "data/vocab/phoneme_field_vocab.json"
+            },
+            "": true,
+            "num_words": 135091
+        }
+    },
+    "data_loader": {
+        "args": {
+            "batch_size": 40,
+            "shuffle": true,
+            "drop_last": false,
+            "pin_memory": true,
+            "num_workers": 4,
+            "start_BEloc_epoch": 0  
+        }
+    },
+    "loss": {
+        "type": "BCEWithLogitsLoss",
+        "dec_weight_loss": 0,
+        "loc_weight_loss": 0,
+        "kws_weight_loss": 1
+    },
+    "tester": {
+        "save_dir": "data/saved/",
+        "verbosity": 2
+    },
+    "optimizer": {
+        "type": "Adam",
+        "args": {
+            "lr": 0.001,                     
+            "weight_decay": 0.0001,             
+            "amsgrad": true
+        }
+   },
+    "lr_scheduler": {
+        "type": "StepLR",
+        "args": {
+            "step_size": 10,
+            "gamma": 0.5
+        }
+    },
+    "trainer": {      
+            "epochs": 100, 
+            "save_dir": "data/saved/",  
+            "save_period": 1, 
+            "verbosity": 2,  
+            "monitor": "off", 
+            "early_stop": 0, 
+            "tensorboard": true 
+    },
+    "localisation": {           
+        "loc_loss": false      
+    } 
+    
+}
+

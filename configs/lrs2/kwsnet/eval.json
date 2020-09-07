@@ -1,0 +1,62 @@
+{
+    "name": "kws_net_test",
+    "n_gpu": 1,
+    "seed": 0,
+    "arch": {
+        "type": "KWSModel",
+        "args": {
+            "hiddenDNNV": 128,
+            "dimRnn3": 16,
+            "inputDimV": 512,
+            "hiddenDimV": 256,
+            "birnnV": true,
+            "d_word_emb": 128,
+            "outdpV": 0.2,
+            "p_size": 73,
+            "g_size": 34,
+            "d_embed": 64,
+            "d_hidden": 500,
+            "embDO": 0,
+            "beam_size": 3,
+            "num_heads": 1,
+            "rnn2": false,
+            "fixed_length_embedding": false,
+            "shortcut": true,
+            "loc_acc": false,
+            "g2p": false
+        }
+    },
+    "dataset": {
+        "type": "DatasetV", 
+        "args": {
+            "dataset_name": "lrs",
+            "split": "test",
+            "cmu_dict_path": "data/vocab/cmudict.dict",
+            "vis_feat_dir":["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
+            "data_struct_path": "data/lrs2/DsplitsLRS2.json", 
+            "num_phoneme_thr": 6,
+            "field_vocab_paths": {
+                "graphemes": "data/vocab/grapheme_field_vocab.json",
+                "phonemes": "data/vocab/phoneme_field_vocab.json"
+            },
+            "num_words": 135091
+        }
+    },
+    "data_loader": {
+        "args": {
+            "batch_size": 40,
+            "shuffle": false,
+            "drop_last": false,
+            "pin_memory": true,
+            "num_workers": 4,
+            "start_BEloc_epoch": 200
+        }
+    },
+    "tester": {
+        "save_dir": "data/saved/",
+        "verbosity": 2
+    },
+    "localisation": {
+        "loc_loss": true                             
+    }
+}
