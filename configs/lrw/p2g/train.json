@@ -32,7 +32,7 @@
             "dataset_name": "lrw",
             "split": "",
             "cmu_dict_path": "data/vocab/cmudict.dict",
-            "vis_feat_dir": ["/scratch/local/hdd/afourast/lrw_feats_mag1.5_80/"], 
+            "vis_feat_dir": ["data/lrw/features/main"], 
             "data_struct_path": "data/lrw/DsplitsLRW.json", 
             "num_phoneme_thr": 0,
             "field_vocab_paths": {
