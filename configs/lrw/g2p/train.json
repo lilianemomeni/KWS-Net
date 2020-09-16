@@ -54,7 +54,7 @@
     },
     "loss": {
         "type": "BCEWithLogitsLoss",
-        "dec_weight_loss": 0,
+        "dec_weight_loss": 1,
         "loc_weight_loss": 0,
         "kws_weight_loss": 1
     },

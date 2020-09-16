@@ -19,11 +19,11 @@
             "embDO": 0,
             "beam_size": 3,
             "num_heads": 1,
-            "rnn2": true, 
-            "fixed_length_embedding": true,
+            "rnn2": false, 
+            "fixed_length_embedding": false,
             "shortcut": true,
             "loc_acc": true,
-            "g2p": true
+            "g2p": false
         }
     },
     "dataset": {
@@ -32,7 +32,7 @@
             "dataset_name": "lrs",
             "split": "",
             "cmu_dict_path": "data/vocab/cmudict.dict",
-            "vis_feat_dir": ["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
+            "vis_feat_dir": ["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
             "data_struct_path": "data/lrs2/DsplitsLRS2.json", 
             "num_phoneme_thr": 6,
             "field_vocab_paths": {
@@ -49,14 +49,14 @@
             "drop_last": false,
             "pin_memory": true,
             "num_workers": 4,
-            "start_BEloc_epoch": 0
+            "start_BEloc_epoch": 200
         }
     },
     "loss": {
         "type": "BCEWithLogitsLoss",
-        "dec_weight_loss": 1,
-        "loc_weight_loss": 0,
-        "kws_weight_loss": 1
+        "dec_weight_loss": 0,
+        "loc_weight_loss": 1,
+        "kws_weight_loss": 0
     },
     "tester": { 
         "save_dir": "data/saved/",

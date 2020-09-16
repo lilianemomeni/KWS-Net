@@ -32,7 +32,7 @@
             "dataset_name": "lrs",
             "split": "",
             "cmu_dict_path": "data/vocab/cmudict.dict",
-            "vis_feat_dir": ["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
+            "vis_feat_dir": ["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
             "data_struct_path": "data/lrs2/DsplitsLRS2.json", 
             "num_phoneme_thr": 6,
             "field_vocab_paths": {

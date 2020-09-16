@@ -32,7 +32,7 @@
             "dataset_name": "lrs",
             "split": "",
             "cmu_dict_path": "data/vocab/cmudict.dict",
-            "vis_feat_dir": ["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
+            "vis_feat_dir": ["data/lrs2/features/main/", "data/lrs2/features/pretrain/"], 
             "data_struct_path": "data/lrs2/DsplitsLRS2.json", 
             "num_phoneme_thr": 6,
             "field_vocab_paths": {
@@ -79,7 +79,7 @@
     },
     "trainer": {     
             "epochs": 100, 
-            "save_dir": "data/saved/",  
+            "save_dir": "/scratch/local/hdd/lili/kws-align/test/",  
             "save_period": 1, 
             "verbosity": 2,  
             "monitor": "off", 
@@ -87,7 +87,7 @@
             "tensorboard": true 
     },
     "localisation": {
-        "loc_loss": true  
+        "loc_loss": false  
     }
     
 }
