@@ -31,10 +31,10 @@ class CMUDict(torchtext.data.Dataset):
     def splits_datasetv(cls, cmu_dict_path, i_field, g_field, p_field):
         with open(cmu_dict_path) as f:
             lines = f.readlines()
-        with open('../data/lrs2/LRS2_test_words.json', "r") as fp:
+        with open("./data/lrs2/LRS2_test_words.json", "r") as fp:
           widx_object = json.load(fp)
           test_words = widx_object['widx']
-        with h5py.File("./permute_word_splits.hdf5",'r') as f:
+        with h5py.File("./data_loader/permute_word_splits.hdf5",'r') as f:
             I = f['permute'][:]       
         linesP = []
         for i in range(0,len(lines)):
